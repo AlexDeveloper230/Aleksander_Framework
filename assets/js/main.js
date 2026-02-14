@@ -117,20 +117,9 @@
     $window.trigger("scroll");
   });
 })(jQuery);
-const copyBtnP = document.getElementById("copy-btn-phone");
 const copyBtnE = document.getElementById("copy-btn-email");
-const phone = "+48 123 456 789";
-const email = "kontakt@twoja-firma.pl";
 
-copyBtnP.addEventListener("click", () => {
-  navigator.clipboard.writeText(`${phone}`);
-  //script that changes content of button id="copy-btn-phone" class="button small" to "telefon skopiowano" and after 5 seconds changes content back to "Skopiuj telefon do schowka"
-  document.getElementById("copy-btn-phone").innerHTML = "Telefon skopiowano";
-  setTimeout(() => {
-    document.getElementById("copy-btn-phone").innerHTML =
-      "Skopiuj telefon do schowka";
-  }, 2000);
-});
+const email = "framework@apmarketingcenter.com";
 
 copyBtnE.addEventListener("click", () => {
   navigator.clipboard.writeText(`${email}`);
